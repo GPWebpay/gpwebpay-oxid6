@@ -1,0 +1,24 @@
+{
+    "name": "manticmarek/gpwebpay-oxid6",
+    "description": "GP webpay module for OXID 6",
+    "type": "oxideshop-module",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "GP webpay",
+            "email": "emailgpwebpay@gpe.cz"
+        }
+    ],
+    "extra": {
+      "oxideshop": {
+        "target-directory": "gpwebpay/gpwebpay-oxid6"
+      }
+    },
+    "autoload": {
+        "psr-4": {
+            "GpwebpayOxid6\\": "gpwebpay-oxid6/" 
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {}
+}
