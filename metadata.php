@@ -11,9 +11,9 @@ $sMetadataVersion = '1.1';
  * Module information
  */
 $aModule = array(
-    'id' => 'gpwebpay',
+    'id' => 'gpwebpay-oxid6',
     'title' => 'GP webpay',
-    'version' => '1.0.3',
+    'version' => '1.0.4',
     'author' => 'GP webpay',
     'url' => 'https://www.gpwebpay.cz/',
     'email' => 'gpwebpay@gpe.cz',
@@ -23,11 +23,11 @@ $aModule = array(
         'en' =>'GP webpay online payments',
     ),
     'extend' => array(
-        'order' => 'gpwebpay/controllers/gpwebpayOrder',
-        'oxpaymentgateway' => 'gpwebpay/models/gpwebpayPaymentGateway',
+        'order' => 'gpwebpay-oxid6/controllers/gpwebpayOrder',
+        'oxpaymentgateway' => 'gpwebpay-oxid6/models/gpwebpayPaymentGateway',
     ),
     'files' => array(
-        'gpwebpay_events' => 'gpwebpay/core/gpwebpay_events.php',
+        'gpwebpay_events' => 'gpwebpay-oxid6/core/gpwebpay_events.php',
     ),
     'blocks' => array(),
     'settings' => array(
