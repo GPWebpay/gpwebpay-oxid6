@@ -14,11 +14,6 @@
         "target-directory": "gpwebpay/gpwebpay-oxid6"
       }
     },
-    "autoload": {
-        "psr-4": {
-            "GpwebpayOxid6\\": "gpwebpay-oxid6/" 
-        }
-    },
     "minimum-stability": "stable",
     "require": {}
 }

@@ -5,7 +5,7 @@
  * @author      Global Payments Europe s.r.o. (emailgpwebpay@gpe.cz)
  */
 
-$sMetadataVersion = '1.1';
+$sMetadataVersion = '1.2';
 
 /**
  * Module information
@@ -13,7 +13,7 @@ $sMetadataVersion = '1.1';
 $aModule = array(
     'id' => 'gpwebpay-oxid6',
     'title' => 'GP webpay',
-    'version' => '1.0.4',
+    'version' => '1.0.3',
     'author' => 'GP webpay',
     'url' => 'https://www.gpwebpay.cz/',
     'email' => 'gpwebpay@gpe.cz',
@@ -23,11 +23,11 @@ $aModule = array(
         'en' =>'GP webpay online payments',
     ),
     'extend' => array(
-        'order' => 'gpwebpay-oxid6/controllers/gpwebpayOrder',
-        'oxpaymentgateway' => 'gpwebpay-oxid6/models/gpwebpayPaymentGateway',
+        'order' => 'gpwebpay/gpwebpay-oxid6/controllers/gpwebpayOrder',
+        'oxpaymentgateway' => 'gpwebpay/gpwebpay-oxid6/models/gpwebpayPaymentGateway',
     ),
     'files' => array(
-        'gpwebpay_events' => 'gpwebpay-oxid6/core/gpwebpay_events.php',
+        'gpwebpay_events' => 'gpwebpay/gpwebpay-oxid6/core/gpwebpay_events.php',
     ),
     'blocks' => array(),
     'settings' => array(
