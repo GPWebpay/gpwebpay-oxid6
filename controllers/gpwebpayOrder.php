@@ -5,9 +5,9 @@
  * @author      Global Payments Europe s.r.o. (emailgpwebpay@gpe.cz)
  */
 
-require_once getShopBasePath() . 'modules/gpwebpay/api/gpwebpayLog.php';
-require_once getShopBasePath() . 'modules/gpwebpay/api/gpwebpayPaymentTypes.php';
-require_once getShopBasePath() . 'modules/gpwebpay/controllers/gpmuzo.php';
+require_once getShopBasePath() . 'modules/gpwebpay/gpwebpay-oxid6/api/gpwebpayLog.php';
+require_once getShopBasePath() . 'modules/gpwebpay/gpwebpay-oxid6/api/gpwebpayPaymentTypes.php';
+require_once getShopBasePath() . 'modules/gpwebpay/gpwebpay-oxid6/controllers/gpmuzo.php';
 
 class gpwebpayOrder extends gpwebpayOrder_parent {
 
@@ -249,10 +249,10 @@ class gpwebpayOrder extends gpwebpayOrder_parent {
                 $errorData = true;
                 gpwebpay_log::log($this->_gpwebpay_log, 'gpwebpayOrder: public filename is empty ');
             }
-            else if(!file_exists($basePath."modules/gpwebpay/cert/".$publicKeyFilename))
+            else if(!file_exists($basePath."modules/gpwebpay/gpwebpay-oxid6/cert/".$publicKeyFilename))
             {
                 $errorData = true;
-                gpwebpay_log::log($this->_gpwebpay_log, 'gpwebpayOrder: public filename not exist ', $basePath.'modules/gpwebpay/cert/'.$publicKeyFilename);
+                gpwebpay_log::log($this->_gpwebpay_log, 'gpwebpayOrder: public filename not exist ', $basePath.'modules/gpwebpay/gpwebpay-oxid6/cert/'.$publicKeyFilename);
             }
 
             if(empty($privateKeyFilename))
@@ -260,10 +260,10 @@ class gpwebpayOrder extends gpwebpayOrder_parent {
                 $errorData = true;
                 gpwebpay_log::log($this->_gpwebpay_log, 'gpwebpayOrder: private filename is empty ');
             }
-            else if(!file_exists($basePath."modules/gpwebpay/cert/".$privateKeyFilename))
+            else if(!file_exists($basePath."modules/gpwebpay/gpwebpay-oxid6/cert/".$privateKeyFilename))
             {
                 $errorData = true;
-                gpwebpay_log::log($this->_gpwebpay_log, 'gpwebpayOrder: private filename not exist ', $basePath.'modules/gpwebpay/cert/'.$privateKeyFilename);
+                gpwebpay_log::log($this->_gpwebpay_log, 'gpwebpayOrder: private filename not exist ', $basePath.'modules/gpwebpay/gpwebpay-oxid6/cert/'.$privateKeyFilename);
             }
 
             if(empty($privateKeyPassword))
@@ -321,7 +321,7 @@ class gpwebpayOrder extends gpwebpayOrder_parent {
             $orderUrl = GpMuzo_CreateOrder(// funkce presmeruje browser s pozadavkem na server Muzo     
                     $gateway, // adresa kam posilat pozadavek do Muzo
                     $returnUrl, // adresa kam ma Muzo presmerovat odpoved
-                    $basePath."modules/gpwebpay/cert/".$privateKeyFilename, // soubor s privatnim klicem
+                    $basePath."modules/gpwebpay/gpwebpay-oxid6/cert/".$privateKeyFilename, // soubor s privatnim klicem
                     $privateKeyPassword, // heslo privatniho klice
                     $merchantNumber, // cislo obchodnika
                     $maxTransactionNumber, // cislo objednavky

@@ -1,6 +1,6 @@
 ﻿Instalace modulu:
 - Obsah zipu rozbalte do adresáře source/modules
-- Do adresáře source/modules/gpwebpay/cert/ nakopírujte váš privátní klíč (*.key) a veřejný klíč (*.pem)
+- Do adresáře source/modules/gpwebpay/gpwebpay-oxid6/cert/ nakopírujte váš privátní klíč (*.key) a veřejný klíč (*.pem)
 - Přihlaste se do administrace OXID shopu a v levém menu zvolte Extensions / Modules 
 - Klikněte na GP webpay a následně vpravo klikněte na tlačítko Activate. Timto se aktivuje modul.
 - Dole přepněte na záložku Settings a poté na volbu GP config
@@ -17,10 +17,10 @@ Merchant number
 - číslo přiřazené k obchodu od GP webpay
 
 Public key filename
-- jméno souboru (*.pem) v adresáři source/modules/gpwebpay/cert/ např. verejnyklic.pem
+- jméno souboru (*.pem) v adresáři source/modules/gpwebpay/gpwebpay-oxid6/cert/ např. verejnyklic.pem
 
 Private key filename
-- jméno souboru (*.key) v adresáři source/modules/gpwebpay/cert/ např. soukromyklic.key
+- jméno souboru (*.key) v adresáři source/modules/gpwebpay/gpwebpay-oxid6/cert/ např. soukromyklic.key
 
 Private key password
 - vaše heslo k privátnímu klíči

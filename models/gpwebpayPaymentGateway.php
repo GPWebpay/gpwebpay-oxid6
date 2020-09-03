@@ -5,8 +5,8 @@
  * @author      Global Payments Europe s.r.o. (emailgpwebpay@gpe.cz)
  */
 
-require_once getShopBasePath() . 'modules/gpwebpay/api/gpwebpayLog.php';
-require_once getShopBasePath() . 'modules/gpwebpay/api/gpwebpayPaymentTypes.php';
+require_once getShopBasePath() . 'modules/gpwebpay/gpwebpay-oxid6/api/gpwebpayLog.php';
+require_once getShopBasePath() . 'modules/gpwebpay/gpwebpay-oxid6/api/gpwebpayPaymentTypes.php';
 
 class gpwebpayPaymentGateway extends gpwebpayPaymentGateway_parent {
 
