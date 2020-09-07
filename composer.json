@@ -1,5 +1,5 @@
 {
-    "name": "GPWebpay/gpwebpay-oxid6",
+    "name": "gpwebpay/gpwebpay-oxid6",
     "description": "GP webpay module for OXID 6",
     "type": "oxideshop-module",
     "license": "MIT",
