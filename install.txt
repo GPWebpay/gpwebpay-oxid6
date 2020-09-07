@@ -1,6 +1,6 @@
 ﻿Instalace modulu:
 - Zapněte konzoli na vašem serveru (např. putty) a přesuňte se na kořenový adresář z e-shopem (je to ten adresář kde po instalaci vidíte adresáře source, var a vendor
-- Spustě instalaci pomoci composeru: composer require gpwebpay/oxid6
+- Spusťte instalaci pomoci composeru: composer require GPWebpay/gpwebpay-oxid6
 - Do adresáře source/modules/gpwebpay/gpwebpay-oxid6/cert/ nakopírujte váš privátní klíč (*.key) a veřejný klíč (*.pem)
 - Přihlaste se do administrace OXID shopu a v levém menu zvolte Extensions / Modules 
 - Klikněte na GP webpay a následně vpravo klikněte na tlačítko Activate. Timto se aktivuje modul.
